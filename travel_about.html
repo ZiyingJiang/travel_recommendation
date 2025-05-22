@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Travel Recommendation</title>
+  <link rel="stylesheet" href="./travel_recommendation.css">
+
+</head>
+<body onload="displayTeam()">
+   <nav><h1>TravelBloom</h1>
+        <ul>
+            <li><a href="./travel_recommendation.html" id="home">Home </a></li>
+            <li><a href="./travel_about.html" id="contact">About Us </a></li>
+            <li><a href="./travel_contact.html" id="contact">Contact Us </a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div id="GradientPane">
+            <div id="MediaList">
+                <hr class="vertical-line">
+                <ul>
+                    <li><a href="https://twitter.com/your_username" class="fa fa-twitter"><img src="x.jpg" alt="X"></a></li>
+                    <li><a href="https://facebook.com/your_page" class="fa fa-facebook"><img src="icons8-facebook-f-50.png" alt="Facebook"></a></li>
+                    <li><a href="https://instagram.com/your_username" class="fa fa-instagram"><img src="inst.jpg" alt="Instagram"></a></li>
+                    <li><a href="https://youtube.com/your_channel" class="fa fa-youtube"><img src="youtube.jpg" alt="YouTube"></a></li>
+                </ul>
+            </div>
+            <div id="aboutPane">
+                <h1>About us</h1>
+                <p>Welcome to our travel advising company — where every journey begins with a celebration of diversity. Our team is made up of passionate travel experts from a wide range of cultural, linguistic, and professional backgrounds.
+                    United by our shared belief in the power of cultural exchange, we’ve built a company culture that honors difference, fosters inclusion, and values the stories that shape each of us. This commitment drives us to design travel
+                     experiences that not only inspire exploration but also deepen our customers' appreciation for the beautiful diversity of our world.
+                </p>
+                <ul id= "teamInfo">
+                    <li><h2>Our Team</h2></li>
+                </ul>
+            </div>
+        </div>
+         
+    </div>
+    <script>
+        function displayTeam(){
+            const teamInfo = document.getElementById('teamInfo');
+            fetch("members.json")
+                .then(response=>response.json())
+                .then(data => {
+                    data.forEach(member => {
+                        //create a new div element for each 
+                        const memberDiv = document.createElement('div');
+                        memberDiv.classList.add('member'); 
+    
+                        //create childdiv for each memberDiv
+                        const photo = document.createElement('img');
+                        photo.src = member.photoURL;
+                        photo.alt = member.name
+                        memberDiv.appendChild(photo);
+
+                        const title = document.createElement('h4');
+                        title.textContent = member.title;
+                        memberDiv.appendChild(title);
+                        
+                        const name = document.createElement('p');
+                        name.textContent = member.name;
+                        memberDiv.appendChild(name);
+    
+                        const role = document.createElement('p');
+                        role.textContent = member.responsibility;
+                        memberDiv.appendChild(role);
+    
+                        teamInfo.appendChild(memberDiv);
+                    });
+                })    
+                .catch(error=>{
+                    console.error('Error fetching member information:', error);
+                    var errorInfo = document.createElement('p');
+                    errorInfo.textContent = 'Failed to fetch member infor. Please try again.';
+                    teamInfo.appendChild(errorInfo);
+                });
+        }
+    </script>   
+</body>
+</html>

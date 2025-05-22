@@ -1,0 +1,31 @@
+[
+    {
+      "name": "Laleh Azar",
+      "title": "Director of Cultural Experience Design",
+      "country": "Iran",
+      "responsibility": "Laleh leads the development of immersive, culturally respectful travel itineraries that highlight local heritage, art, and tradition.",
+      "photoURL": "laleh-azar.jpg"
+    },
+    {
+      "name": "Meilin Zhang",
+      "title": "Head of Client Experience and Operations",
+      "country": "China",
+      "responsibility": "Meilin ensures that every client interaction — from first inquiry to final feedback — is seamless, personalized, and infused with warmth and care.",
+      "photoURL": "meilin-zhang.jpg"
+    },
+    {
+      "name": "Achieng Njeri",
+      "title": "Global Partnerships and Community Engagement Lead",
+      "country": "Kenya",
+      "responsibility": "Achieng builds meaningful partnerships with local communities and ethical travel providers to ensure mutual benefit and authentic engagement.",
+      "photoURL": "achieng-njeri.jpg"
+    },
+    {
+      "name": "Elin Dahlgren",
+      "title": "Chief Strategy and Sustainability Officer",
+      "country": "Sweden",
+      "responsibility": "Elin guides the company’s long-term growth strategy while championing environmental responsibility and inclusive travel practices.",
+      "photoURL": "elin-dahlgren.jpg"
+    }
+  ]
+  
