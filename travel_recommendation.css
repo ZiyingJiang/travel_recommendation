@@ -10,12 +10,14 @@
     box-sizing: border-box;
 }
 nav {
-    background-color: #f0f0f0;
-    padding: 20px;
+    background-color: #161616;
+    padding: 15px;
     display: flex;
-    align-items: center;
+    align-items: bottom;
     justify-content: space-between;
-    
+    color: white;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
   }
   
   nav ul {
@@ -27,27 +29,60 @@ nav {
     display: inline;
     margin-right: 10px;
   }
-  
+
+  nav li input {
+    border-radius:15px ;
+  }
+  ::placeholder {
+    color: #69a1b7;
+  }
+
   nav a {
     text-decoration: none;
-    color: #333;
+    color: white;
     font-weight: bold;
+    font-style: normal;
+    font-family:Tahoma;
   }
   
   /* Basic CSS for the form elements */
   body {
     font-family: Arial, sans-serif;
     /* margin: 20px; */
+    background: rgba(200,200,200,0.1);
+    background-image: url("IMG_1964.JPG");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-blend-mode:multiply;
   }
   
   h1 {
     margin-bottom: 20px;
   }
   
-  .container {
-    background-image: url("IMG_1964.jpg");
+  #textPane {
+    float:left;
+    height: 100vh;
+    width: 40%;    
+    background-image: linear-gradient(to right,rgba(25, 49, 58, 0.8),rgba(25, 49, 58, 0.0));
+    color:white;
+    padding-left: 8%;
+    padding-top: 18%;
   }
 
+  #textPane h1 {
+    font: size 50px;
+    font-weight: 800;
+    text-transform:uppercase;
+  }
+  #textPane p {
+    margin-top: 15%;
+    line-height: 1.5em;;
+  }
+  #textPane button {
+    margin-top: 15%;
+    text-transform:uppercase;
+  }
   div {
     margin-bottom: 10px;
   }
@@ -70,6 +105,7 @@ nav {
     color: white;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
   }
   
   button:hover {
