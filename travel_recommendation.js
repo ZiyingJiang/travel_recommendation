@@ -12,9 +12,10 @@ function Search(){
     const recommendationList = document.createElement('ul');
 
     //fetch the json 
-    fetch('travelRecommandation_api.json')
+    fetch('travelRecommendation_api.json')
     .then(response => response.json())
     .then(data => {
+        console.log(JSON.stringify(data));
         //add an empty ul in the displayPane
         result.appendChild(recommendationList);
         
@@ -25,7 +26,7 @@ function Search(){
                 const cityName = city.name.toLowerCase();
                 const cityDescription = city.description.toLowerCase();
                 
-                if (cityName.includes(keyword) || cityDescription.inclues(keyword)) {
+                if (cityName.includes(keyword) || cityDescription.includes(keyword)) {
                     // Create list item for each matching city
                     const liItem = document.createElement('li');
                     const itemDiv = document.createElement ('div');
@@ -41,7 +42,7 @@ function Search(){
                     const descpt = document.createElement('p');
                     descpt.textContent = country.cities.description;
 
-                    itemDiv.appendChild(img);
+                    //itemDiv.appendChild(img);
                     itemDiv.appendChild(name);
                     itemDiv.appendChild(descpt);
                     liItem.appendChild(itemDiv);

@@ -59,11 +59,13 @@ nav {
   }
   
   #GradientPane {
-    float:left;
+    display: flex;
+    flex-direction: row;
     height: 100dvh;
     width: 100%;    
     background-image: linear-gradient(to right,rgba(25, 49, 58, 0.9),rgba(25, 49, 58, 0.0) 60%);
     color:white;
+    padding: 20px;
   }
   
   #MediaList {
@@ -113,27 +115,51 @@ nav {
     margin-top: 15%;
     text-transform:uppercase;
   }
-  #aboutPane {
+
+  #displayPane {
+    width: 50%;
+    overflow-y: auto;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+ #displayPane ul li {
+    display:block;
+    margin-right: 
+    width: 250px;
+    position: center;
+    border-radius: 5px; 
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .recommendation {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.recommendation img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 5px;
+}
+
+.recommendation h4, .recommendation p {
+    margin: 5px 0;
+}
+
+ #aboutPane {
     margin-top: 5%;
     margin-left: 10%;
     margin-right: 10%;
     padding: 20px;
     background-color:rgba(25, 49, 58, 0.4) ;
   }
-  #displayPane {
-
-  }
- #displpayPane ul li {
-    display:block;
-    margin-right: 
-    width: 250px;
-    position: center;
-    border-radius: 5px; 
-  }
-    .recommendation img {
-    width: 250px; 
-  }
-#
   #aboutPane ul {
     padding-top: 100px;
     display: flex;
