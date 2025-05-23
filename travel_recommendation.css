@@ -120,7 +120,20 @@ nav {
     padding: 20px;
     background-color:rgba(25, 49, 58, 0.4) ;
   }
+  #displayPane {
 
+  }
+ #displpayPane ul li {
+    display:block;
+    margin-right: 
+    width: 250px;
+    position: center;
+    border-radius: 5px; 
+  }
+    .recommendation img {
+    width: 250px; 
+  }
+#
   #aboutPane ul {
     padding-top: 100px;
     display: flex;
