@@ -99,7 +99,7 @@ nav {
     margin-top: 280px;
     margin-left: 15%;
  }
- #textPane h1 {
+ .container h1 {
     font: size 50px;
     font-weight: 800;
     text-transform:uppercase;
@@ -121,30 +121,51 @@ nav {
     background-color:rgba(25, 49, 58, 0.4) ;
   }
 
-  #aboutPane h1 {
-    font: size 50px;
-    font-weight: 800;
-    text-transform:uppercase;
-  }
-
-  #aboutPane ul li {
-    display:inline-block;
-    margin-right: 10px;
-    width: 150px;
-    position: center;
-  }
-  #teamInfo {
+  #aboutPane ul {
     padding-top: 100px;
     display: flex;
     align-items: bottom;
     justify-content: space-between;
     color: white;
   }
+  #aboutPane ul li {
+    display:inline-block;
+    margin-right: 10px;
+    width: 150px;
+    position: center;
+  }
+
   .member img {
     width: 150px; 
     border-radius: 10px;   
   }
-  
+  #contactPane {
+    margin-top: 280px;
+    margin-left: 15%;
+    width: 100%;
+ }
+
+ #contactPane ul{
+    padding-top: 100px;
+    display:flex;
+    align-items: bottom;
+    justify-content:space-between;
+    color: white;
+  }
+  #contactPane ul li{
+    display:inline-block;
+    width: 150px;
+    position: center;
+  }
+  #contactPane input,textarea{
+    width:100%;
+    background-color: transparent;
+    border-color: white;
+    border-width: 1px;
+  }
+  #contactPane button{
+    width:100%;
+  }
   div {
     margin-bottom: 10px;
   }
