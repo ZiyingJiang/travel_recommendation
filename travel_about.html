@@ -55,19 +55,23 @@
                         photo.alt = member.name
                         memberDiv.appendChild(photo);
 
-                        const title = document.createElement('h4');
+                        const name = document.createElement('h4');
+                        name.textContent = member.name;
+                        memberDiv.appendChild(name);
+                        
+                        const title = document.createElement('p');
                         title.textContent = member.title;
                         memberDiv.appendChild(title);
                         
-                        const name = document.createElement('p');
-                        name.textContent = member.name;
-                        memberDiv.appendChild(name);
+                        
     
-                        const role = document.createElement('p');
-                        role.textContent = member.responsibility;
-                        memberDiv.appendChild(role);
+                        //const role = document.createElement('p');
+                        //role.textContent = member.responsibility;
+                        //memberDiv.appendChild(role);
+                        const memberListItem = document.createElement('li');
+                        memberListItem.appendChild(memberDiv);
     
-                        teamInfo.appendChild(memberDiv);
+                        teamInfo.appendChild(memberListItem);
                     });
                 })    
                 .catch(error=>{
