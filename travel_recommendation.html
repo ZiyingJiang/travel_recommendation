@@ -12,8 +12,8 @@
             <li><a href="./travel_about.html" id="contact">About Us </a></li>
             <li><a href="./travel_contact.html" id="contact">Contact Us </a></li>
             <li><input type="text" id="KeywordInput" placeholder="Enter a city or an attraction">  </li>
-            <li><button id='btnSearch'>Search</button></li>
-            <li><button id='btnReset'>Reset</button></li>
+            <li><button id='btnSearch' onclick="Search()">Search</button></li>
+            <li><button id='btnClear' onclick="Clear()">Clear</button></li>
         </ul>
     </nav>
     <div class="container">
@@ -32,6 +32,10 @@
                 <p>TravelBloom is your personalized gateway to unforgettable journeys. Whether you're dreaming of serene beaches, vibrant cityscapes, hidden gems, or culinary adventures, TravelBloom instantly blossoms into a curated list of suggestions to inspire your next escape.</p>
                 <button id='btnBook'>Book Now</button>
             </div>
+            <div id= "displayPane">
+                
+            </div>
+
         </div>
          
     </div>
