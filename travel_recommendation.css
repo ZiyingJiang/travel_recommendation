@@ -140,32 +140,40 @@ nav {
     border-radius: 10px;   
   }
   #contactPane {
-    margin-top: 280px;
+    margin-top: 320px;
     margin-left: 15%;
-    width: 100%;
+    max-width: 70%;
  }
 
  #contactPane ul{
-    padding-top: 100px;
     display:flex;
-    align-items: bottom;
-    justify-content:space-between;
+    flex-direction: row;
+    align-items: flex-start;
+    gap:10px;
     color: white;
   }
   #contactPane ul li{
     display:inline-block;
-    width: 150px;
-    position: center;
+    flex: 1 1 auto; /* Allow flexibility, minimum width of 300px */
+    max-width: 500px;
   }
-  #contactPane input,textarea{
+  #contactPane input,
+  #contactPane textarea {
     width:100%;
     background-color: transparent;
     border-color: white;
     border-width: 1px;
+    padding: 8px;
+    color:white;
   }
   #contactPane button{
     width:100%;
   }
+  #inputPane {
+    background-color:rgba(25, 49, 58, 0.4) ;
+    padding: 5px;
+  }
+
   div {
     margin-bottom: 10px;
   }
