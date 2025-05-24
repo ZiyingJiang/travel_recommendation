@@ -11,13 +11,51 @@ nav {
     background-color: #161616;
     padding: 15px;
     display: flex;
-    align-items: bottom;
+    align-items: center;
     justify-content: space-between;
     color: white;
     font-style: italic;
     font-family: 'Times New Roman', Times, serif;
   }
+
+  .nav-left h1 {
+    margin-right: 30px;
+    font-size: 24px;
+    color: white;
+  }
   
+  .nav-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+  }
+  .nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-style: normal;
+    font-family: Tahoma;
+  }
+  
+  .nav-right {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .nav-right input {
+    border-radius: 15px;
+    padding: 5px 10px;
+  }
+  
+  ::placeholder {
+    color: #69a1b7;
+  }
   ul {
     list-style-type: none;
     /* padding: 0; */
@@ -162,6 +200,7 @@ nav {
     margin-right: 10%;
     padding: 20px;
     background-color:rgba(25, 49, 58, 0.4) ;
+    margin-bottom: 15%;
   }
   #aboutPane ul {
     padding-top: 100px;
@@ -181,23 +220,32 @@ nav {
     width: 150px; 
     border-radius: 10px;   
   }
+
   #contactPane {
-    margin-top: 320px;
+    margin-top: 300px;
+    margin-right: 15%;
     margin-left: 15%;
-    max-width: 70%;
+
+    padding: 20px;
+ 
+    margin-bottom: 10%;
  }
 
  #contactPane ul{
     display:flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap:10px;
+    align-items:flex-start;
     color: white;
+    justify-content: space-between;
+    gap: 20px;
   }
   #contactPane ul li{
     display:inline-block;
-    flex: 1 1 auto; /* Allow flexibility, minimum width of 300px */
-    max-width: 500px;
+    width: 350px;
+  }  
+  #inputPane {
+    background-color:rgba(25, 49, 58, 0.4) ;
+    padding: 5px;
+    width:100%;
   }
   #contactPane input,
   #contactPane textarea {
@@ -211,10 +259,7 @@ nav {
   #contactPane button{
     width:100%;
   }
-  #inputPane {
-    background-color:rgba(25, 49, 58, 0.4) ;
-    padding: 5px;
-  }
+
 
   div {
     margin-bottom: 10px;
