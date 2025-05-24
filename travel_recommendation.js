@@ -91,7 +91,7 @@ function addListItem(item, list){
     const descpt = document.createElement('p');
     descpt.textContent = item.description;
 
-    //itemDiv.appendChild(img);
+    itemDiv.appendChild(img);
     itemDiv.appendChild(name);
     itemDiv.appendChild(descpt);
     liItem.appendChild(itemDiv);

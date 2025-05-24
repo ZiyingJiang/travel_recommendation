@@ -46,12 +46,13 @@ nav {
   /* Basic CSS for the form elements */
   body {
     height: 100vh;
+    overflow: hidden; 
     font-family: Arial, sans-serif;
     /* margin: 20px; */
     background-image: url("IMG_1964.JPG");
     background-repeat: no-repeat;
     background-size:cover;
-    
+    background-position: center;
   }
   
   h1 {
@@ -99,7 +100,7 @@ nav {
   #textPane {
     width: 40%;
     margin-top: 280px;
-    margin-left: 15%;
+    margin-left: 8%;
  }
  .container h1 {
     font: size 50px;
@@ -108,7 +109,7 @@ nav {
   }
   #textPane p {
     margin-top: 15%;
-    line-height: 1.5em;;
+    line-height: 1.5em;
     
   }
   #textPane button {
@@ -119,38 +120,40 @@ nav {
   #displayPane {
     width: 50%;
     overflow-y: auto;
-    padding-right: 5%;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding-left: 20px;
   }
 
  #displayPane ul li {
-    display:block;
-    margin-right: 
-    width: 250px;
-    position: center;
-    border-radius: 5px; 
     display: flex;
     gap: 10px;
-    align-items: center;
+    align-items: right;
   }
   
   .recommendation {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
+    align-items:center;
+    width: auto;
+    border-radius: 5px; 
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
 .recommendation img {
     width: 100%;
-    max-width: 250px;
+    max-width: 400px;
     border-radius: 5px;
 }
 
-.recommendation h4, .recommendation p {
+.recommendation h4 ,
+.recommendation p {
     margin: 5px 0;
+    color:#161616;
+    width: 100%;
+    max-width: 400px;
+    padding: 5px;
 }
 
  #aboutPane {
